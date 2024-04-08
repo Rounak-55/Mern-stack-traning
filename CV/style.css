@@ -1,0 +1,108 @@
+body {
+	padding: 0;
+	margin: 0;
+	background-color: rgb(26, 26, 26);
+	display: flex;
+	justify-content: center;
+}
+.paper {
+	height: 297mm;
+	width: 210mm;
+	background-color: white;
+	padding: 3rem 0 3rem 0;
+	display: flex;
+	flex-direction: column;
+}
+.intro {
+	height: 10rem;
+	background-color: rgb(255, 245, 245);
+	width: 210mm;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+}
+.name {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	letter-spacing: 5px;
+	font-size: 45px;
+	color: rgb(89, 89, 89);
+}
+.post {
+	padding: 0;
+	margin: 0;
+	font-family: "Gilda Display", serif;
+	font-size: 20px;
+	letter-spacing: 3px;
+	color: rgb(38, 38, 38);
+}
+/*main body*/
+.para {
+	color: rgb(89, 89, 89);
+	font-family: sans-serif;
+}
+.point {
+	word-spacing: 5px;
+	color: rgb(89, 89, 89);
+	font-family: sans-serif;
+}
+.header {
+	padding: 1rem 0 0 0;
+	color: rgb(89, 89, 89);
+	font-family: sans-serif;
+}
+.main {
+	padding: 2rem 0 0 0;
+	display: flex;
+	flex-direction: row;
+}
+.summary {
+	padding: 2rem 0.5rem 0;
+	border-bottom: 2px solid rgb(217, 217, 217);
+}
+.projects {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 0.5rem 0;
+}
+.jobDetails {
+	width: 25rem;
+	padding: 0rem 1em 0rem 3rem;
+}
+.personalDetails {
+	padding: 0 0 0rem 1rem;
+	width: 18rem;
+	border-left: 2px solid rgb(217, 217, 217);
+}
+.information {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 0.5rem 0;
+	border-bottom: 2px solid rgb(217, 217, 217);
+}
+.skill {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 0.5rem 0;
+}
+.data {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	list-style-type: none;
+	align-items: center;
+}
+.fas {
+	padding: 0;
+	padding: 0 .5rem 0 0;
+	font-size: 16px;
+	color: rgb(231, 231, 136);
+}
+.language {
+
+}
+.make {
+	padding: 1rem;
+}
