@@ -1,0 +1,19 @@
+body {
+	padding: 4rem;
+	background-color: #232425;
+}
+.card {
+	background-color: rgb(255, 51, 0);
+	border: 2px solid black;
+	padding: 1rem;
+}
+#gomba {
+	border: 1rem solid white;
+	border-radius: 1rem;
+	display: grid;
+	grid-template-columns: repeat(25, 1fr);
+}
+.active {
+	background-color: white;
+	
+}

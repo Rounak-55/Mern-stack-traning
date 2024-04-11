@@ -1,0 +1,95 @@
+body {
+	margin: 0;
+	padding: 10rem 0 0 0;
+	display: flex;
+	justify-content: center;
+	background-image: url(https://images.unsplash.com/photo-1615412704911-55d589229864?q=80&w=1882&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.calculator {
+	padding: 2rem;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+}
+.screen {
+	display: flex;
+	height: 10rem;
+	width: 35rem;
+	background-color: rgba(255, 255, 255, 0.8);
+	justify-content: flex-end;
+	align-items: center;
+
+
+}
+#result {
+	font-weight: bold;
+	font-size: 50px;
+	font-family: sans-serif;
+}
+.feature {
+	padding: 1.5rem 0 0 0;
+	display: inline-grid;
+	grid-template-areas: 
+	'f f f f s'
+	't t t t s';
+}
+.firstArea {
+	padding: 5px;
+	grid-area: f;
+	display: inline-grid;
+	grid-template-columns: auto auto auto;
+	gap: 5px;
+}
+.secondArea {
+	padding: 5px 0 0 0;
+	grid-area: s;
+	display: inline-grid;
+	grid-template-columns: auto;
+	grid-row: 0 / span 3;
+	gap: 5px;
+}
+.thirdArea {
+	padding: 2px 5px 0 5px;
+	grid-area: t;
+	display: inline-grid;
+	grid-template-columns: auto auto;
+	gap: 5px;
+	height: 6rem;
+}
+.num {
+	background-color: rgb(255, 153, 51);
+	outline: none;
+	border: none;
+	padding: 0.5rem;
+	height: 6rem;
+	border-radius: 5px;
+}
+.num:hover {
+	background-color: black;
+	color: white;
+}
+.cal {
+	background-color: rgb(0, 115, 230);
+	border: none;
+	outline: none;
+	color: white;
+	font-size: 50px;
+	border-radius: 5px;
+}
+.cal:hover {
+	background-color: rgb(0, 0, 102);
+}
+.equ {
+	background-color: rgb(102, 255, 102);
+	outline: none;
+	border: none;
+	border-radius: 5px;
+}
+.equ:hover {
+	background-color: white;
+}
+b {
+	font-size: 30px;
+}
