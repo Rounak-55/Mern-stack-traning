@@ -1,7 +1,7 @@
 let result = document.getElementById('result');
 let opra;
 let firstNum = 0;
-
+let clr = document.getElementById("clr");
 const one = document.getElementById("one");
 one.addEventListener("click", () => {
 	result.innerHTML+=1;
@@ -44,37 +44,83 @@ zero.addEventListener("click", () => {
 })
 const equ = document.getElementById("equ");
 equ.addEventListener("click", () => {
-	if (opra == "+") {
+if (opra == "+") {
 		result.innerHTML= Number(firstNum) + Number(result.innerHTML);
 	} else if (opra == "-") {
-		result.innerHTML= Number(result.innerHTML) - Number(firstNum);
+		result.innerHTML= Number(firstNum) - Number(result.innerHTML);
 	}else if (opra == "*") {
 		result.innerHTML= Number(firstNum) * Number(result.innerHTML);
 	}else if (opra == "/") {
 		result.innerHTML= Number(firstNum) / Number(result.innerHTML);
 	}
+	firstNum = 0;
 })
 const oparationP = document.getElementById("oparationP");
 oparationP.addEventListener("click", () => {
-	opra = "+";
-	firstNum = Number(firstNum) + Number(result.innerHTML);
+if (opra == "-") {
+		firstNum = Number(firstNum) - Number(result.innerHTML);
+	} else if (opra == "*") {
+		firstNum = Number(firstNum) * Number(result.innerHTML);
+	} else if (opra == "/") {
+		firstNum = Number(firstNum) / Number(result.innerHTML);
+	} else if (opra == "+") {
+		firstNum = Number(firstNum) + Number(result.innerHTML);
+	} else {
+		firstNum = Number(result.innerHTML);
+	}
 	result.innerHTML= "";
+	opra = "+";
 })
 const oparationS = document.getElementById("oparationS");
 oparationS.addEventListener("click", () => {
+if (opra == "-") {
+		firstNum = Number(firstNum) - Number(result.innerHTML);
+	} else if (opra == "*") {
+		firstNum = Number(firstNum) * Number(result.innerHTML);
+	} else if (opra == "/") {
+		firstNum = Number(firstNum) / Number(result.innerHTML);
+	} else if (opra == "+") {
+		firstNum = Number(firstNum) + Number(result.innerHTML);
+	} else {
+		firstNum = Number(result.innerHTML);
+	}
+	result.innerHTML= "";
 	opra = "-";
-	firstNum = Number(firstNum) - Number(result.innerHTML);
-	result.innerHTML="";
 })
 const oparationM = document.getElementById("oparationM");
 oparationM.addEventListener("click", () => {
+if (opra == "-") {
+		firstNum = Number(firstNum) - Number(result.innerHTML);
+	} else if (opra == "*") {
+		firstNum = Number(firstNum) * Number(result.innerHTML);
+	} else if (opra == "/") {
+		firstNum = Number(firstNum) / Number(result.innerHTML);
+	} else if (opra == "+") {
+		firstNum = Number(firstNum) + Number(result.innerHTML);
+	} else {
+		firstNum = Number(result.innerHTML);
+	}
+	result.innerHTML= "";
 	opra = "*";
-	firstNum = Number(firstNum) * Number(result.innerHTML);
-	result.innerHTML="";
 })
 const oparationD = document.getElementById("oparationD");
 oparationD.addEventListener("click", () => {
+if (opra == "-") {
+		firstNum = Number(firstNum) - Number(result.innerHTML);
+	} else if (opra == "*") {
+		firstNum = Number(firstNum) * Number(result.innerHTML);
+	} else if (opra == "/") {
+		firstNum = Number(firstNum) / Number(result.innerHTML);
+	} else if (opra == "+") {
+		firstNum = Number(firstNum) + Number(result.innerHTML);
+	} else {
+		firstNum = Number(result.innerHTML);
+	}
+	result.innerHTML= "";
 	opra = "/";
-	firstNum = Number(firstNum) / Number(result.innerHTML);
-	result.innerHTML="";
 })
+ clr.addEventListener('click', () => {
+ 	firstNum= 0;
+ 	opra= "";
+ 	result.innerHTML = "";
+ })
